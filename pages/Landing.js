@@ -1,15 +1,32 @@
 import React from 'react'
-import { Text, View, Button } from 'react-native'
+import { Text, View } from 'react-native'
+import { Button } from 'react-native-paper'
 
 export default function Landing({ navigation }) {
-    return (
-        <View style={{ flex: 1, justifyContent: 'center', backgroundColor: 'blue', }}>
-            <Button
-                title="Register"
-                onPress={() => navigation.navigate("Register")} />
-            <Button
-                title="Login"
-                onPress={() => navigation.navigate("Login")} />
-        </View>
-    )
+  return (
+    <View
+      style={{
+        display: 'flex',
+        flex: 1,
+        flexFlow: 'column wrap',
+        justifyContent: 'center',
+      }}
+    >
+      <div style={{ padding: '1rem' }}>
+        <Button
+          mode='contained'
+          onPress={() => navigation.navigate('Generate OTP')}
+          style={{ marginBottom: '1rem' }}
+        >
+          Online eKYC
+        </Button>
+        <Button mode='contained' style={{ marginBottom: '1rem' }}>
+          Offline eKYC
+        </Button>
+        <Button mode='contained' style={{ marginBottom: '1rem' }}>
+          Authenticate User
+        </Button>
+      </div>
+    </View>
+  )
 }
