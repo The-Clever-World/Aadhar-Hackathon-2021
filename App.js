@@ -10,19 +10,17 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 
 const Stack = createStackNavigator();
-
 export default function App() {
   return (
-    <View>
-      <NavigationContainer>
-        <Stack.Navigator initialRouteName="Landing">
-          <Stack.Screen   name="Landing" component={Landing} options={{ headerShown: false }}/>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Landing">
+          <Stack.Screen
+            name="Landing"
+            component={Landing}
+            options={{ headerShown: false }}
+          />
           <Stack.Screen name="Register" component={Register} />
-          <Stack.Screen name="Login" component={Login} />
-        </Stack.Navigator>
-      </NavigationContainer>
-    </View>
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-
