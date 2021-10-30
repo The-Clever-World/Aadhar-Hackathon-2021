@@ -7,7 +7,6 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import Landing from "./pages/Landing";
 import Register from "./pages/Register";
-import Login from "./pages/Login";
 
 const Stack = createStackNavigator();
 export default function App() {
