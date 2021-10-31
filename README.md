@@ -19,6 +19,10 @@
 - Headless Aadhaar Face Auth APK
 - Staging sandbox UID
 
+### Acknowledgement
+
+We'd like to thank the UIDAI team for providing us with such a great chance and support to engage in this hackathon with such noble themes.
+
 ### Authors
 
 <a href="https://github.com/The-Clever-World/Aadhar-Hacathon-2021/graphs/contributors">
