@@ -1,12 +1,6 @@
-import axios from 'axios'
 
 export const generateCaptcha = async () => {
   try {
-    const config = {
-      headers: {
-        'Content-Type': 'application/json'
-      },
-    }
 
     const response = await fetch("https://stage1.uidai.gov.in/unifiedAppAuthService/api/v2/get/captcha", {
       method: 'POST',
