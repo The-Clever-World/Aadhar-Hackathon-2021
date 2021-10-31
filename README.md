@@ -1,4 +1,4 @@
-![[object Object]](https://socialify.git.ci/The-Clever-World/Aadhar-Hacathon-2021/image?description=1&font=Raleway&language=1&logo=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2Fc%2Fcf%2FAadhaar_Logo.svg&name=1&owner=1&pattern=Solid&theme=Dark)
+![[object Object]](https://socialify.git.ci/The-Clever-World/Aadhar-Hacathon-2021/image?description=1&language=1&logo=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2Fc%2Fcf%2FAadhaar_Logo.svg&name=1&owner=1&pattern=Circuit%20Board&theme=Light)
 
 # Aadhaar 100% Authentication App
 
@@ -18,6 +18,10 @@
 - VID (Virtual IDentity) Generation API
 - Headless Aadhaar Face Auth APK
 - Staging sandbox UID
+
+### Acknowledgement
+
+We'd like to thank the UIDAI team for providing us with such a great chance and support to engage in this hackathon with such noble themes.
 
 ### Authors
 
