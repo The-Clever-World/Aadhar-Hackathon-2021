@@ -14,7 +14,7 @@ This GitHub repository contains the source code for our React Native-based mobil
 
 ### The Architecture
 
-<img width="1356" alt="Untitled" src="https://user-images.githubusercontent.com/56395895/139590742-7199a9b6-2374-4a59-b63f-1856eb5b9a17.png">
+<img width="1464" alt="Aadhaar Hackathon" src="https://user-images.githubusercontent.com/56395895/139592543-904aca3d-1273-4222-b60c-d996bb5e42ed.png">
 
 ### Frameworks and libraries used
 
