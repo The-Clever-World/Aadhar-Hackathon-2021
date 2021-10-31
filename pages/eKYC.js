@@ -41,12 +41,16 @@ const EKYC = (props) => {
           onChangeText={(text) => setShareCode(text)}
         />
         <div style={{ marginTop: '1rem' }}>
-          <Button mode='contained'>Download eKYC</Button>
+          <Button
+            mode='contained'
+            onPress={() => ekycHandler()}
+          >
+            Download eKYC
+          </Button>
         </div>
         <div style={{ marginTop: '1rem' }}>
           <Button
             mode='contained'
-            onPress={() => ekycHandler()}
           >
             Proceed to User Authentication
           </Button>
