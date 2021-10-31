@@ -20,7 +20,8 @@ const OTP = ({ navigation }) => {
   const generateOTPHandler = (navigation) => {
     if (captcha) {
       const transactionId = uuidv4();
-      generateOTP(uid, captcha.captchaTxnId, captchaValue, transactionId).then((data) => {
+      //TODO: change uidNum from locallStorage to uid state
+      generateOTP(localStorage.getItem("UID"), captcha.captchaTxnId, captchaValue, transactionId).then((data) => {
         console.log(data);
         alert("OTP Generated")
         navigation.navigate("Generate eKYC XML");
