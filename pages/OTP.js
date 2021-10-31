@@ -1,13 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View } from 'react-native'
 import { TextInput, Button } from 'react-native-paper'
+import { generateCaptcha } from '../api/API'
 
 const OTP = ({ navigation }) => {
+  const [captcha, setCaptcha] = useState({})
+
+  const captchaHandler = () => {
+    generateCaptcha().then((data) => {
+      console.log(data)
+      setCaptcha(data)
+    })
+  }
+
   return (
     <View>
       <div style={{ padding: '1rem', marginTop: '5rem' }}>
         <div style={{ marginBottom: '1rem' }}>
-          <Button mode='contained'>Generate Captcha</Button>
+          <Button mode='contained' onPress={captchaHandler}>
+            Generate Captcha
+          </Button>
         </div>
         <TextInput placeholder='Enter Captcha' mode='outlined' />
         <TextInput
