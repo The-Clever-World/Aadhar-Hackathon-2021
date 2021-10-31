@@ -16,9 +16,8 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Landing">
         <Stack.Screen
-          name="Landing"
+          name="Home Page"
           component={Landing}
-          options={{ headerShown: false }}
         />
         <Stack.Screen name="Generate OTP" component={OTP} />
         <Stack.Screen name="Generate eKYC XML" component={EKYC} />
