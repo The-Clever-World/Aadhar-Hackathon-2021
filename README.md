@@ -2,9 +2,19 @@
 
 # Aadhaar 100% Authentication App
 
+This GitHub repository contains the source code for our React Native-based mobile app. We attempted to work on the ```UIDAI Hackathon 2021``` theme ```"Authentication Reimagined"```, and based our project on Problem Statement 4 (PS4), which aims to achieve 100 percent offline authentication for rural India.
+
 ### Team ```UEM Kolkata```
 
 - Reference ID: ```3BwAsCuVQE```
+
+### Problem Statement
+
+![1 (1)](https://user-images.githubusercontent.com/56395895/139589895-e31ba46e-0ed7-4ab0-b5a1-b94ced488de2.png)
+
+### The Architecture
+
+<img width="1356" alt="Untitled" src="https://user-images.githubusercontent.com/56395895/139590742-7199a9b6-2374-4a59-b63f-1856eb5b9a17.png">
 
 ### Frameworks and libraries used
 
