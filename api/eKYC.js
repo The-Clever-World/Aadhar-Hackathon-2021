@@ -13,7 +13,7 @@ export const eKYC = async (txnNumber, otp, shareCode, uid) => {
             referrerPolicy: 'no-referrer',
             body: JSON.stringify(
                 {
-                    "txnNumber": "mAadhaar:" + txnNumber,
+                    "txnNumber": txnNumber,
                     "otp": otp,
                     "shareCode": shareCode,
                     "uid": uid

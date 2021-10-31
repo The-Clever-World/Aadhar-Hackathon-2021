@@ -2,16 +2,16 @@ import React, { useState } from 'react'
 import { View } from 'react-native'
 import { TextInput, Button } from 'react-native-paper'
 import { eKYC } from '../api/eKYC'
-import { v4 as uuidv4 } from "uuid"
 
-const EKYC = ({ navigation }) => {
+const EKYC = (props) => {
   const [otp, setOtp] = useState("")
   const [uid, setUid] = useState("")
-  const [ shareCode, setShareCode ] = useState("")
+  const [shareCode, setShareCode] = useState("")
+
+  const { txnId } = props.route.params;
 
   const ekycHandler = () => {
-    const txnNumber = uuidv4();
-    eKYC(txnNumber, otp, shareCode, uid).then((data) => {
+    eKYC(txnId, otp, shareCode, uid).then((data) => {
       console.log(data)
       alert("eKYC details sent")
     })
