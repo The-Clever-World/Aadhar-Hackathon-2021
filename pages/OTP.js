@@ -4,20 +4,23 @@ import { TextInput, Button } from 'react-native-paper'
 import { generateCaptcha } from '../api/API'
 
 const OTP = ({ navigation }) => {
-  const [captcha, setCaptcha] = useState({})
+  const [captcha, setCaptcha] = useState("")
 
   const captchaHandler = () => {
     generateCaptcha().then((data) => {
       console.log(data)
-      setCaptcha(data)
+      setCaptcha(data.captchaBase64String)
     })
   }
 
   return (
     <View>
+      {captcha &&
+        <img src={`data:image/png;base64, ${captcha}`} />
+      }
       <div style={{ padding: '1rem', marginTop: '5rem' }}>
         <div style={{ marginBottom: '1rem' }}>
-          <Button mode='contained' onPress={captchaHandler}>
+          <Button mode='contained' onPress={() => captchaHandler()}>
             Generate Captcha
           </Button>
         </div>
